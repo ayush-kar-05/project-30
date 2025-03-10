@@ -1,0 +1,159 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+nav {
+  background-color: #333;
+  color:rgb(246, 234, 7);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.website-name {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+.main-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.welcome-heading {
+  font-size: 60px;
+  color: #c13131;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.5);
+  animation: lighting 2s infinite alternate, fadeIn 2s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes lighting {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(15deg);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(0, 255, 255, 0.6);
+  }
+  100% {
+    transform: rotateX(-15deg) rotateY(-15deg);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
+  }
+}
+
+
+h2 {
+  margin-top: 40px; /* Reduced margin to move the heading upwards */
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#work-description {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #2805eb;
+  font-weight: bolder;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6), 0 0 5px rgba(255, 255, 255, 0.6),
+  0 0 7px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.4); 
+  transform-style: preserve-3d;
+  width: 80%; /* Sets the width of the content */
+  max-width: 1000px; /* Prevents content from stretching too wide */
+  margin: 0 auto; /* Centers the content */
+  padding: 20px; /* Adds padding around the content */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.team-members div {
+  display: block;
+  margin-bottom: 5px;
+  color: #ed1c1c;
+  font-weight: bolder;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6), 0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 7px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.4); 
+  transform-style: preserve-3d;
+}
+
+
+
+
+footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+footer .email {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 16px;
+}
